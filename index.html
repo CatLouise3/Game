@@ -90,7 +90,7 @@
                 b.status = 0;
                 score++;
                 if (score == brickRowCount * brickColumnCount) {
-                  alert("YOU WIN, CONGRATS!");
+                  alert("YOU WIN, CONGRATS! Your score is: " + score * 2);
                   document.location.reload();
                 }
               }
@@ -102,7 +102,7 @@
       function drawBall() {
         ctx.beginPath();
         ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-        ctx.fillStyle = "#C7B3FA";
+        ctx.fillStyle = "#885DF2";
         ctx.fill();
         ctx.closePath();
       }
